@@ -104,7 +104,7 @@
             var postId = getQueryParam('post');
 
             if (postId) {
-                $http.get('http://localhost:8080/postagem/' + postId)
+                $http.get('https://apiblog-o2ik.onrender.com/postagem/' + postId)
                     .then(response => {
                         $scope.postagem = response.data;
                         updatePostDetails(response.data);

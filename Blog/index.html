@@ -232,7 +232,7 @@
     <script>
         angular.module('blogApp', [])
             .controller('PostagensController', function($scope, $http, $window) {
-                $http.get('http://localhost:8080/postagens')
+                $http.get('https://apiblog-o2ik.onrender.com/postagens')
                     .then(response => {
                         $scope.postagens = response.data;
                     })
